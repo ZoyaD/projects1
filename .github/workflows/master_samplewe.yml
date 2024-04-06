@@ -20,11 +20,9 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '8'
-          
-      - name: Check Node.js 20
-        run: node --20
- 
 
+      - name: Check Node.js version
+        run: node --version
 
       - name: Build with Maven
         run: mvn clean install
@@ -64,4 +62,3 @@ jobs:
           app-name: 'samplewe'
           slot-name: 'Production'
           package: '*.jar'
-          
