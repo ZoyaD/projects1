@@ -62,4 +62,3 @@ jobs:
           app-name: 'samplewe'
           slot-name: 'Production'
           package: '*.jar'
-          distribution: 'jar' # <-- Add the distribution input here
