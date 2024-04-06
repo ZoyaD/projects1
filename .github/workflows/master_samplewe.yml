@@ -1,4 +1,4 @@
-name: Build and deploy JAR app to Azure Web App - samplewe
+name: Build and deploy JAR app to Azure Web App - my-java-web-app
 
 on:
   push:
@@ -61,7 +61,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'samplewe'
+          app-name: 'my-java-web-app'
           slot-name: 'Production'
           package: '*.jar'
           distribution: 'jar' # Provide a default distribution
